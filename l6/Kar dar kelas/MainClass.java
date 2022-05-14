@@ -6,8 +6,8 @@ import java.sql.*;
 public class MainClass {
     public static void main(String[] args) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "mehran",
-                    "mehran123");
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "tara",
+                    "tara123");
             PreparedStatement preparedStatement1 = connection.prepareStatement("insert into person (name,pass,username,email) values (?,?,?,?)");
             preparedStatement1.setString(1, "ali");
             preparedStatement1.setLong(2, 1234);
