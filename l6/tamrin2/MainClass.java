@@ -7,8 +7,8 @@ public class MainClass {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         try {
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "mehran",
-                    "mehran123");
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "tara",
+                    "tara123");
             PreparedStatement preparedStatement1 = connection.prepareStatement("insert into person (employeecode,employeename,melicode,fathername,responsibility,rights,workexperience) values (?,?,?,?,?,?,?)");
             System.out.println("Enter employeecode");
             preparedStatement1.setLong(1,scanner.nextInt());
