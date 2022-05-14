@@ -82,7 +82,7 @@ public class Model {
     {
         try {
             Connection connection= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe"
-                    , "mehran","mehran123");
+                    , "tara","tara213");
 
             switch (getAction())
             {
