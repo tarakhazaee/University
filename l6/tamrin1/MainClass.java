@@ -5,12 +5,12 @@ import java.sql.*;
 public class MainClass {
     public static void main(String[] args) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "mehran",
-                    "mehran123");
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "tara",
+                    "tara12");
             PreparedStatement preparedStatement1 = connection.prepareStatement("insert into person (employeecode,username,email,password,age,education) values (?,?,?,?,?,?)");
             preparedStatement1.setLong(1,100);
-            preparedStatement1.setString(2,"Ali");
-            preparedStatement1.setString(3,"Ali100@gmail.com");
+            preparedStatement1.setString(2,"sara");
+            preparedStatement1.setString(3,"sara@gmail.com");
             preparedStatement1.setLong(4,123);
             preparedStatement1.setLong(5,19);
             preparedStatement1.setString(6,"bachelor");
