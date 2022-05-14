@@ -81,7 +81,7 @@ public class Model {
     public void Database()
     {
         try {
-            Connection connection= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/L8","root","myjava123");
+            Connection connection= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/L8","tara","tara123");
             PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO Homework1(Id,Name,Family_Name,Age,Father_Name,Job,Address,Phone) VALUES (?,?,?,?,?,?,?,?)");
             preparedStatement.setInt(1,getId());
             preparedStatement.setString(2,getName());
