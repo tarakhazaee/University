@@ -126,7 +126,7 @@ public class Model {
     public void Database()
     {
         try {
-            Connection connection= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/L8","root","myjava123");
+            Connection connection= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/L8","tara","tara123");
             Statement statement= ((java.sql.Connection) connection).createStatement();
             ResultSet resultSet=statement.executeQuery("SELECT * FROM Homework2");
             while (resultSet.next())
